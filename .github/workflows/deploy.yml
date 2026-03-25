@@ -13,5 +13,5 @@ jobs:
       - name: Trigger Coolify Deploy
         run: |
           curl -s -X GET \
-            "http://37.59.238.227:8000/api/v1/deploy?uuid=w3yvu7nfs0ofrhts6gdecqra&force=false" \
+            "http://coolify.hugolorenzo.courses.studalya.net/api/v1/deploy?uuid=w3yvu7nfs0ofrhts6gdecqra&force=false" \
             -H "Authorization: Bearer ${{ secrets.COOLIFY_TOKEN }}"
